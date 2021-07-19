@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mdb.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    {% comment %} <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> {% endcomment %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+    
+     
+     
+     
+  
+    <link rel="icon" type = "image/png" href = "{% static 'images/social-media.png' %}"> 
+    <title>Recommender</title>
+</head>
+
+<body >
+     {% include 'System/nav.html' %} 
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+    {% include 'System/banner.html' %} 
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     
+                {% block content %}
+
+
+                 {% endblock content %}
+     
+
+
+     {% include 'System/footer.html' %}
+
+	
+  
+<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/plotly.min.js' %}"></script>
+<script src="{% static 'js/all.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/mdb.min.js' %}"></script>
+<script>
+$(window).scroll(function(){
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 0);
+  });
+  
+    </script>
+</body>
+</html>

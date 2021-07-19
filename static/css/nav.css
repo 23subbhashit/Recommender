@@ -1,0 +1,15 @@
+.navbar-default{
+      background: #BF40BF;
+      width: 100%;
+    }
+.navbar-default.scrolled{
+      background: #702963;
+      width: 100%;
+    }
+nav div ul li{
+      padding: 10px;
+}
+
+nav{
+    text-align: center;
+}

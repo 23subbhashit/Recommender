@@ -1,0 +1,45 @@
+{% extends 'System/index.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/trends.css' %}">
+
+
+
+
+<center><h1 style="font-family:Lucida Console">Top 10 Most Populor Products</h1></center>
+
+<br/>
+<br/>
+<br/>
+<div class="container">
+    <table class="table table-bordered border-primary">
+  <thead>
+    <tr>
+      <th scope="col">Item</th> 
+      <th scope="col">Category</th> 
+      <th scope="col">Number of Ratings</th>
+      <th scope="col">Mean of Ratings</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for i,j,k,l,m in top10 %}
+    <tr>
+      <td>{{  i  }}</td>
+      <td>{{  m  }}</td>
+      <td>{{  j  }}</td>
+      <td>{{  k  }}</td>
+      <td>{{  l  }}</td>
+    </tr>
+    {% endfor %}
+    
+    
+  </tbody>
+</table>
+
+</div>
+
+<br/>
+<br/>
+
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+
+<nav class="mb-1 navbar navbar-expand-lg navbar-default fixed-top ">
+  <a class="navbar-brand" href="#" style="color:white">
+  <img src="{% static 'images/social-media.png' %}" style="width:100px;height:60px"/>
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars" style="color:#DDD"></span>
+  </button>
+
+
+  <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent-4">
+    <ul class="navbar-nav">
+   
+    
+    
+    
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'cards' %}" style="color:white;font-weight:bold;">
+          About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'pbr' %}" style="color:white;font-weight:bold;">
+          Popularity Based Recommender</a>
+      </li>
+      
+      
+    </ul>
+  </div>
+  {% comment %} <div class="ml-auto">
+  <button></button>
+  </div> {% endcomment %}
+</nav>
